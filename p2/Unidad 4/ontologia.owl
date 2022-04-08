@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Curso="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Curso:"
+     xmlns:mates="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#mates:"
+     xmlns:Centro="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Centro:"
+     xmlns:Nombre="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Nombre:"
+     xmlns:gustos="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#gustos:"
+     xmlns:Horario="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Horario:"
+     xmlns:trabajo="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#trabajo:"
+     xmlns:Apellidos="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Apellidos:"
+     xmlns:notaMedia="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#notaMedia:"
+     xmlns:dificultad="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#dificultad:"
+     xmlns:ListaProfesores="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaProfesores:"
+     xmlns:ListaMatriculados="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaMatriculados:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#cursa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#cursa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#imparte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#imparte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#pertenece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#pertenece">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Departamento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#perteneceProf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#perteneceProf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Departamento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Apellidos:String -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Apellidos:String">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Centro:String -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Centro:String">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Curso:int -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Curso:int">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Horario:String -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Horario:String">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaMatriculados:list -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaMatriculados:list">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaProfesores:list -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#ListaProfesores:list">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Nombre:String -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Nombre:String">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#dificultad:bool -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#dificultad:bool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#gustos:list -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#gustos:list">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#mates:bool -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#mates:bool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#nota:double -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#nota:double">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#notaMedia:double -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#notaMedia:double">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#trabajo:bool -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#trabajo:bool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Departamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Departamento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Alumno"/>
+        <Apellidos:String>Ortiz</Apellidos:String>
+        <Centro:String>ETSIIT</Centro:String>
+        <Nombre:String>Elena</Nombre:String>
+        <gustos:list>Mates Si
+Programar Si
+Hardware No
+Trabajar Normal</gustos:list>
+        <notaMedia:double rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</notaMedia:double>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Asignatura"/>
+        <Curso:int rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Curso:int>
+        <Horario:String>Lunes 15:30</Horario:String>
+        <ListaMatriculados:list>Elena
+Juan
+María
+Pablo
+Sandra
+Esteban
+Rodrigo
+Sonia</ListaMatriculados:list>
+        <ListaProfesores:list>Pedro
+Antonio
+Esperanza</ListaProfesores:list>
+        <dificultad:bool>normal</dificultad:bool>
+        <mates:bool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mates:bool>
+        <trabajo:bool rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</trabajo:bool>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elena/ontologies/2021/5/untitled-ontology-4#Profesor"/>
+        <Apellidos:String>Pérez</Apellidos:String>
+        <Centro:String>ETSIIT</Centro:String>
+        <Nombre:String>Pedro</Nombre:String>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
